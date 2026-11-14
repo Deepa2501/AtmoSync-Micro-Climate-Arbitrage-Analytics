@@ -1,0 +1,8 @@
+
+kafka-python
+python-dotenv
+pandas
+pytest
+
+
+
