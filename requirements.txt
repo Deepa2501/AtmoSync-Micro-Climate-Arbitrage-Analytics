@@ -1,0 +1,46 @@
+# ==========================================
+# AtmoSync - Python Dependencies
+# ==========================================
+
+# Data Processing & Analysis
+pandas
+numpy
+scipy
+
+# API Requests & Data Ingestion
+requests
+httpx
+python-dotenv
+
+# Kafka Streaming
+confluent-kafka
+
+# Snowflake Connectivity
+snowflake-connector-python[pandas]
+snowflake-sqlalchemy
+
+# Data Validation
+pydantic
+pandera
+
+# Analytics & Visualization
+plotly
+matplotlib
+seaborn
+
+# Machine Learning & Forecasting
+scikit-learn
+statsmodels
+xgboost
+
+# Logging & Utilities
+python-dateutil
+PyYAML
+
+# Testing
+pytest
+pytest-cov
+
+# Code Quality
+black
+flake8
