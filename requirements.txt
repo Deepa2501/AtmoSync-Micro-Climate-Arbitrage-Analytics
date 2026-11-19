@@ -1,3 +1,4 @@
+
 # ==========================================
 # AtmoSync - Python Dependencies
 # ==========================================
@@ -18,6 +19,10 @@ confluent-kafka
 # Snowflake Connectivity
 snowflake-connector-python[pandas]
 snowflake-sqlalchemy
+cryptography
+
+# dbt Transformation
+dbt-snowflake
 
 # Data Validation
 pydantic
