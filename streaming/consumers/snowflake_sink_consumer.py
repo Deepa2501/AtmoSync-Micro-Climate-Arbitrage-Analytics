@@ -25,7 +25,7 @@ INSERT_SENSOR_SQL = """
         TEMPERATURE,
         HUMIDITY,
         VIBRATION,
-        SENSOR_TIMESTAMP
+        EVENT_TIMESTAMP
     )
     VALUES (%s, %s, %s, %s, %s, %s)
 """
