@@ -1,0 +1,20 @@
+[truth] CNT-0001 Callao->Rotterdam transit=300h fault=temp_drift
+[truth] CNT-0002 Callao->Rotterdam transit=300h fault=temp_drift
+[truth] CNT-0003 Veracruz->Hamburg transit=266h fault=None
+[truth] CNT-0004 Lazaro Cardenas->Rotterdam transit=272h fault=None
+[truth] CNT-0005 Veracruz->Los Angeles transit=78h fault=None
+[truth] CNT-0006 Lazaro Cardenas->Rotterdam transit=272h fault=None
+[truth] CNT-0007 Callao->Los Angeles transit=191h fault=None
+[truth] CNT-0008 Callao->Rotterdam transit=300h fault=None
+[truth] CNT-0009 Veracruz->Rotterdam transit=258h fault=None
+[truth] CNT-0010 Lazaro Cardenas->Hamburg transit=280h fault=None
+[truth] CNT-0011 Callao->Hamburg transit=311h fault=None
+[truth] CNT-0012 Callao->Hamburg transit=311h fault=None
+[truth] CNT-0013 Veracruz->Los Angeles transit=78h fault=None
+[truth] CNT-0014 Callao->Los Angeles transit=191h fault=None
+[truth] CNT-0015 Veracruz->Los Angeles transit=78h fault=None
+[truth] CNT-0016 Lazaro Cardenas->New York transit=105h fault=humidity_spike
+[truth] CNT-0017 Veracruz->Rotterdam transit=258h fault=None
+[truth] CNT-0018 Lazaro Cardenas->New York transit=105h fault=None
+[truth] CNT-0019 Veracruz->Rotterdam transit=258h fault=None
+[truth] CNT-0020 Veracruz->Los Angeles transit=78h fault=None
