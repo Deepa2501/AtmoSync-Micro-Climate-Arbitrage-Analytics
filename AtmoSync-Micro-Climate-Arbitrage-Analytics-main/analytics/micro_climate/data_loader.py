@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 
+
 from analytics.micro_climate.config import (
     LOCATIONS,
     START_DATE,
@@ -66,6 +67,53 @@ def fetch_weather_data():
     return weather_df
 
 
+def validate_weather_data(df):
+
+    required_columns = [
+        "timestamp",
+        "location",
+        "temperature",
+        "humidity",
+        "precipitation",
+        "wind_speed"
+    ]
+
+    missing_columns = set(required_columns) - set(df.columns)
+
+    if missing_columns:
+        raise ValueError(
+            f"Missing columns: {missing_columns}"
+        )
+
+    print("\nLOCATION COVERAGE")
+
+    print(
+        df.groupby("location").agg(
+            total_records=("timestamp", "count"),
+            first_date=("timestamp", "min"),
+            last_date=("timestamp", "max")
+        )
+    )
+
+    print("\nMISSING VALUES")
+
+    print(df[required_columns].isnull().sum())
+
+    print("\nDUPLICATE RECORDS")
+
+    print(
+        df.duplicated(
+            subset=["location", "timestamp"]
+        ).sum()
+    )
+
+    print("\nUNIQUE LOCATIONS")
+
+    print(df["location"].nunique())
+
+    return df
+
+
 if __name__ == "__main__":
 
     df = fetch_weather_data()
@@ -77,3 +125,7 @@ if __name__ == "__main__":
 
     print(df.head())
     print("Total records:", len(df))
+
+df = fetch_weather_data()
+
+validate_weather_data(df)
